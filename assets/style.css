@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    height: 120px;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 0 1em;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: lightsalmon;
+}
+
+h2 {
+    font-size: 60px;
+    margin: 0 0 15px;
+}
+
+.container p{
+    margin: 0 0 10px;
+}
+
+.container input{
+    width: 50%;
+    height: 3vh;
+    margin-bottom: 15px;
+    background-color: lightblue;
+    border: none;
+}
+
+.container button{
+    padding: 1em 6em;
+    border-radius: 20px;
+    border: none;
+    background-color: orange;
+}
+
