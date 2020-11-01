@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/styles.css">
     <title>Document</title>
 </head>
 <body>
@@ -12,10 +12,28 @@
     </header>
     <div class="container">
         <h2>Bienvenid@ a PokeFinder</h2>
-        <p>Desaroollado por Rodolfo Domínguez</p>
-        <label>Te mostramos cualquie pokemón ¿Cuál quieres ver?</label>
-        <input type="text">
-        <button>Buscar</button>
+        <p>Desarollado por Rodolfo Domínguez</p>
+        <label>Te mostramos cualquier pokemón ¿Cúal quieres ver?</label>
+        <input type="text" id="pokemon">
+        <button onclick="baseURL()">Buscar</button>
+        <section id="pokeinfo">
+            <table class="poketable">
+                <tr>
+                    <td>Nombre:</td>
+                    <td id="nombre">######</td>
+                </tr>
+                <tr>
+                    <td>ID:</td>
+                    <td id="ID">#####</td> 
+                </tr>
+                <tr>
+                    <td>Altura:</td>
+                    <td id="altura">#######</td> 
+                </tr>
+            </table>
+            <img id="image" src="assets/close_1.png" alt="pokemon">
+        </section>            
     </div>
+<script src="assets/main.js"></script>
 </body>
 </html>

@@ -49,3 +49,28 @@ h2 {
     background-color: orange;
 }
 
+button:hover{
+    cursor: pointer;
+}
+
+#pokeinfo{
+    width: 70%;
+    display: none;
+    justify-content: space-around;
+    align-content: center;
+    margin-top: 5em;
+}
+
+#pokeinfo img{
+    height: 250px;
+}
+
+.poketable{
+    margin: auto 0;
+}
+
+.poketable td{
+    padding: 1em;
+    text-transform: uppercase;
+    text-align: center;
+}
