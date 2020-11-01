@@ -1,7 +1,7 @@
 const baseURL = ()=>{
     let arrValue = [];
     let parameter = document.getElementById("pokemon").value;
-    url = "https://pokeapi.co/api/v2/pokemon/" + parameter;
+    url = "https://pokeapi.co/api/v2/pokemon/" + parameter.toLowerCase();
     fetch(url)
         .then((response => response.json()))
         .then(myJson => {

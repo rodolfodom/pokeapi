@@ -1,39 +1,39 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-MX">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles.css">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Bebas+Neue&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>PokeFinder</title>
 </head>
 <body>
     <header>
-        <h1>PokeFinder.RD</h1>
+        <h1>PokeFinder</h1>
     </header>
     <div class="container">
         <h2>Bienvenid@ a PokeFinder</h2>
-        <p>Desarollado por Rodolfo Domínguez</p>
-        <label>Te mostramos cualquier pokemón ¿Cúal quieres ver?</label>
+        <label>Te mostramos cualquier pokémon ¿Cúal quieres ver?</label>
         <input type="text" id="pokemon">
         <button onclick="baseURL()">Buscar</button>
         <section id="pokeinfo">
             <table class="poketable">
                 <tr>
-                    <td>Nombre:</td>
-                    <td id="nombre">######</td>
+                    <td>NOMBRE:</td>
+                    <td id="nombre"></td>
                 </tr>
                 <tr>
                     <td>ID:</td>
-                    <td id="ID">#####</td> 
+                    <td id="ID"></td> 
                 </tr>
                 <tr>
-                    <td>Altura:</td>
-                    <td id="altura">#######</td> 
+                    <td>ALTURA:</td>
+                    <td id="altura"></td> 
                 </tr>
             </table>
-            <img id="image" src="assets/close_1.png" alt="pokemon">
+            <img id="image" src= "#" alt="pokemon">
         </section>            
     </div>
-<script src="assets/main.js"></script>
+<script src="assets/scripts/main.js"></script>
 </body>
 </html>
