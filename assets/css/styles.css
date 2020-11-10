@@ -19,6 +19,8 @@ header{
     display: flex;
     align-items: center;
     color: #b3171ffd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    position: absolute;
 }
 
 h1{
@@ -38,7 +40,7 @@ h1{
 }
 
 h2 {
-    font: 60px 'Bebas Neue', cursive;
+    font: 80px 'Bebas Neue', cursive;
     margin: 0 0 15px;
 }
 
@@ -50,24 +52,28 @@ h2 {
 .container input{
     width: 40%;
     height: 30px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     background-color: lightblue;
     border: none;
     border-radius: 20px;
     text-align: center;
 }
 
+#error{
+    font-family: 'Archivo', sans-serif;
+    color: rgb(131, 6, 6);
+    font-size: 15px;
+    display: none;
+}
+
 .container button{
+    margin-top: 15px;
     padding: 1em 6em;
     border-radius: 20px;
     border: none;
     background-color: #db424a;
     font-family: 'Archivo', sans-serif;
     font-weight: 600;
-}
-
-button:hover{
-    cursor: pointer;
 }
 
 #pokeinfo{

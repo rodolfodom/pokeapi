@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Bebas+Neue&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/pseudoclases.css">
     <title>PokeFinder</title>
 </head>
 <body>
@@ -15,6 +16,7 @@
         <h2>Bienvenid@ a PokeFinder</h2>
         <label>Te mostramos cualquier pokémon ¿Cúal quieres ver?</label>
         <input type="text" id="pokemon" placeholder="Ingresa el nombre o ID del pokémon">
+        <small id="error">ID o nombre incorrecto</small>
         <button onclick="baseURL()">Buscar</button>
         <section id="pokeinfo">
             <table class="poketable">
