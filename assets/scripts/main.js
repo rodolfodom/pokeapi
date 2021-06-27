@@ -1,3 +1,8 @@
+import { generateGrid } from "./pokemonGrid.js";
+
+const searchButton = document.getElementById("search");
+
+
 const baseURL = ()=>{
     let arrValue = [];
     let parameter = document.getElementById("pokemon").value;
@@ -7,11 +12,10 @@ const baseURL = ()=>{
             document.getElementById("error").style.display = "none";
         }, 2000);
     }else{
-        url = "https://pokeapi.co/api/v2/pokemon/" + parameter.toLowerCase();
+        const url = "https://pokeapi.co/api/v2/pokemon/" + parameter.toLowerCase();
     fetch(url)
         .then((response => response.json()))
         .then(myJson => {
-            console.log(myJson)
             document.getElementById("pokeinfo").style.display = "flex";
             document.getElementById("image").src = myJson.sprites.other["official-artwork"].front_default;
             if(myJson.sprites.other["official-artwork"].front_default == null){
@@ -34,4 +38,8 @@ const baseURL = ()=>{
     };
 }
 
+document.addEventListener("DOMContentLoaded", ()=>{
+    generateGrid("https://pokeapi.co/api/v2/pokemon");
+    searchButton.addEventListener("click", baseURL);
+});
 

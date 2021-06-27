@@ -20,7 +20,7 @@
         <label>Te mostramos cualquier pokémon ¿Cúal quieres ver?</label>
         <input type="text" id="pokemon" placeholder="Ingresa el nombre o ID del pokémon">
         <small id="error">ID o nombre incorrecto</small>
-        <button onclick="baseURL()">Buscar</button>
+        <button id="search">Buscar</button>
         <section id="pokeinfo">
             <table class="poketable">
                 <tr>
@@ -39,49 +39,22 @@
             <img id="image" src="#" alt="pokemon">
         </section>
         <section class="cards">
-            <figure>
-                <img class="poke_picture"
-                    src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/132.png">
-                <figcaption>
-                    <p class="poke_name">Ditto</p>
-                    <p class="poke_ID">132</p>
-                </figcaption>
-            </figure>
-            <figure>
-                <img class="poke_picture"
-                    src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/132.png">
-                <figcaption>
-                    <p class="poke_name">Ditto</p>
-                    <p class="poke_ID">132</p>
-                </figcaption>
-            </figure>
-            <figure>
-                <img class="poke_picture"
-                    src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/132.png">
-                <figcaption>
-                    <p class="poke_name">Ditto</p>
-                    <p class="poke_ID">132</p>
-                </figcaption>
-            </figure>
-            <figure>
-                <img class="poke_picture"
-                    src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/132.png">
-                <figcaption>
-                    <p class="poke_name">Ditto</p>
-                    <p class="poke_ID">132</p>
-                </figcaption>
-            </figure>
-            <figure>
-                <img class="poke_picture"
-                    src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/132.png">
-                <figcaption>
-                    <p class="poke_name">Ditto</p>
-                    <p class="poke_ID">132</p>
-                </figcaption>
-            </figure>
         </section>
     </div>
-    <script src="assets/scripts/main.js"></script>
+    <footer>
+        <p>Desarrollado por Rdoolfo Domínguez</p>
+    </footer>
+    <template id="poke-card-template">
+        <figure>
+            <img class="poke-picture"
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/132.png">
+            <figcaption>
+                <p class="poke-name">Ditto</p>
+                <p class="poke-ID">132</p>
+            </figcaption>
+        </figure>
+    </template>
+    <script src="assets/scripts/main.js" type="module"></script>
 </body>
 
 </html>
