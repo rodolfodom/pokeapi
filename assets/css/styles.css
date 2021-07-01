@@ -51,7 +51,8 @@ h2 {
 }
 
 .container input {
-  width: 40%;
+  width: calc(100% - 1rem);
+  max-width: 800px;
   height: 30px;
   margin-bottom: 5px;
   background-color: lightblue;
@@ -108,11 +109,12 @@ h2 {
 .cards {
   margin-top: 2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 0.9fr));
+  width: 90%;
   gap: 2rem;
   max-width: 1200px;
-  padding: 2rem 0;
+  padding: 2rem 0rem;
+  justify-content: center;
 }
 
 .cards figure {
@@ -139,10 +141,22 @@ h2 {
 }
 
 .load-more-button {
-  transition: all 4s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 footer {
-  height: 60px;
+  height: 70px;
   background-color: #db424a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  color: white;
+  font-family: "Archivo", sans-serif;
+}
+
+.logo-footer {
+  max-height: 65%;
+  padding: 0.5rem;
+  cursor: pointer;
 }

@@ -1,9 +1,11 @@
 import { getData } from "./getData.js";
+import { logoFooterRedirect } from "./logoFooterRedirect.js";
 import { pokemonDataTable } from "./pokemonDataTable.js";
 import { generateGrid } from "./pokemonGrid.js";
 
 const searchButton = document.getElementById("search"),
-  loadMoreButton = document.getElementById("load-more");
+  loadMoreButton = document.getElementById("load-more"),
+  portafolioURL = "https://rodolfodom.github.io/portafoliov2/";
 
 const baseURL = () => {
   let arrValue = [];
@@ -44,6 +46,7 @@ const baseURL = () => {
 document.addEventListener("DOMContentLoaded", () => {
   generateGrid("https://pokeapi.co/api/v2/pokemon");
   searchButton.addEventListener("click", baseURL);
+  logoFooterRedirect(portafolioURL);
 });
 
 loadMoreButton.addEventListener("click", (e) => {
