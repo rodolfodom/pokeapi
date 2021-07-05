@@ -1,0 +1,32 @@
+@media (max-width: 350px) {
+  h1 {
+    font-size: 65px;
+    padding: 0 0 0 0.2em;
+  }
+
+  h2 {
+    font-size: 60px;
+  }
+
+  #pokeinfo {
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: center;
+  }
+
+  .poketable td {
+    padding: 0.2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  #pokeinfo {
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+  }
+
+  .poketable td {
+    padding: 0.2rem;
+  }
+}

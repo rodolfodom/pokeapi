@@ -4,105 +4,163 @@ rojo: #ed1b24
 amarlllo: #ffca08
 */
 
-
-html, body{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    background-color: #4381d3;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
-header{
-    width: 100%;
-    height: 120px;
-    background-color:#ffca08;
-    display: flex;
-    align-items: center;
-    color: #b3171ffd;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    position: absolute;
-}
-
-h1{
-    margin: 0;
-    padding: 0 0 0 0.5em;
-    font: 65px 'Bebas Neue', cursive;
+header {
+  width: 100%;
+  height: 120px;
+  background-color: #ffca08;
+  display: flex;
+  align-items: center;
+  color: #b3171ffd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+h1 {
+  margin: 0;
+  padding: 0 0 0 0.5em;
+  font: 65px "Bebas Neue", cursive;
+}
 
-.container{
-    margin: 125px 5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color:  #4381d3;
+.container {
+  min-height: calc(100vh - 120px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #4381d3;
+  padding: 2rem 0;
 }
 
 h2 {
-    font: 80px 'Bebas Neue', cursive;
-    margin: 0 0 15px;
-    text-align: center;
-    margin-top: 15%;
+  font: 80px "Bebas Neue", cursive;
+  margin: 0 0 15px;
+  padding-left: 0.5rem;
 }
 
-.container label{
-    font-family: 'Archivo', sans-serif;
-    margin-bottom: 0.5em;
-    text-align: center;
+.container label {
+  font-family: "Archivo", sans-serif;
+  margin-bottom: 0.5em;
+  padding-left: 0.5rem;
 }
 
-.container input{
-    width: 40%;
-    height: 30px;
-    min-width: 300px;
-    margin-bottom: 5px;
-    background-color: lightblue;
-    border: none;
-    border-radius: 20px;
-    text-align: center;
+.container input {
+  width: calc(100% - 1rem);
+  max-width: 800px;
+  height: 30px;
+  margin-bottom: 5px;
+  background-color: lightblue;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
 }
 
-#error{
-    font-family: 'Archivo', sans-serif;
-    color: rgb(131, 6, 6);
-    font-size: 15px;
-    display: none;
+#error {
+  font-family: "Archivo", sans-serif;
+  color: rgb(131, 6, 6);
+  font-size: 15px;
+  display: none;
 }
 
-.container button{
-    margin-top: 15px;
-    padding: 1em 6em;
-    border-radius: 20px;
-    border: none;
-    background-color: #db424a;
-    font-family: 'Archivo', sans-serif;
-    font-weight: 600;
+.container button {
+  margin-top: 15px;
+  padding: 1em 6em;
+  border-radius: 20px;
+  border: none;
+  background-color: #db424a;
+  font-family: "Archivo", sans-serif;
+  font-weight: 600;
+  color: white;
 }
 
-#pokeinfo{
-    width: 70%;
-    display: none;
-    justify-content: space-around;
-    align-content: center;
-    margin-top: 5em;
-    background-color: #0d6fee;
-    border-radius: 20px;
-    min-width: 250px;
+#pokeinfo {
+  width: 70%;
+  display: none;
+  justify-content: space-around;
+  align-content: center;
+  margin-top: 5em;
+  background-color: #0d6fee;
+  border-radius: 20px;
+  scroll-margin: 2rem;
 }
 
-#pokeinfo img{
-    height: 250px;
+#pokeinfo img {
+  width: 80vw;
+  min-width: 150px;
+  max-width: 350px;
 }
 
-.poketable{
-    margin: auto 0;
-    font-family: 'Archivo', sans-serif;
+.poketable {
+  margin: auto 0;
+  font-family: "Archivo", sans-serif;
 }
 
-.poketable td{
-    padding: 1em;
-    text-transform: uppercase;
-    text-align: center;
-    color: aliceblue;
+.poketable td {
+  padding: 1em;
+  text-transform: uppercase;
+  text-align: center;
+  color: aliceblue;
+}
+
+.cards {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 0.9fr));
+  width: 90%;
+  gap: 2rem;
+  max-width: 1200px;
+  padding: 2rem 0rem;
+  justify-content: center;
+}
+
+.cards figure {
+  background-color: #005acf;
+  border-radius: 8px;
+  margin: 0;
+}
+
+.cards img {
+  width: 100%;
+}
+
+.cards figcaption * {
+  text-align: center;
+  color: white;
+  font-family: "Archivo", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  margin: 0.5rem;
+}
+
+.poke-card {
+  transition: all 200ms ease-in;
+}
+
+.load-more-button {
+  transition: all 0.5s ease-in-out;
+}
+
+footer {
+  height: 70px;
+  background-color: #db424a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  color: white;
+  font-family: "Archivo", sans-serif;
+}
+
+.logo-footer {
+  max-height: 65%;
+  padding: 0.5rem;
+  cursor: pointer;
 }

@@ -10,3 +10,9 @@ button:active{
 input:focus{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
+
+.poke-card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgb(48, 48, 48);
+}
