@@ -1,3 +1,4 @@
+import buttonUp from "./buttonUp.js";
 import { getData } from "./getData.js";
 import { logoFooterRedirect } from "./logoFooterRedirect.js";
 import { pokemonDataTable } from "./pokemonDataTable.js";
@@ -44,6 +45,7 @@ const baseURL = () => {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
+  buttonUp();
   generateGrid("https://pokeapi.co/api/v2/pokemon");
   searchButton.addEventListener("click", baseURL);
   logoFooterRedirect(portafolioURL);
