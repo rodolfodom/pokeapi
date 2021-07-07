@@ -4,7 +4,7 @@ export default function buttonUp() {
   const buttonUp = d.getElementById("button-up");
   buttonUp.addEventListener("click", (e) => {
     location.hash = "";
-    location.hash = "pokemon";
+    location.hash = "home";
   });
 
   d.addEventListener("scroll", (e) => {

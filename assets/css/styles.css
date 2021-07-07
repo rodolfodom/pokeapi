@@ -62,6 +62,7 @@ h2 {
   border-radius: 20px;
   text-align: center;
   scroll-margin: 10rem;
+  font-size: 18px;
 }
 
 #error {
